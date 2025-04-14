@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 	"net/http/httputil"
@@ -13,7 +14,7 @@ import (
 )
 
 var (
-	listenAddr    = os.Getenv("LISTEN_ADDR")
+	listenAddr    = fmt.Sprintf(":%", os.Getenv("LISTEN_ADDR"))
 	serverAAddr   = os.Getenv("SERVER_A_ADDR")
 	serverBAddr   = os.Getenv("SERVER_B_ADDR")
 	checkInterval = 5 * time.Second
