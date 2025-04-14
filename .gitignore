@@ -19,6 +19,7 @@ go.work
 tmp/
 
 # IDE specific files
+ollama-proxy
 .vscode
 .idea
 

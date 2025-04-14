@@ -13,7 +13,7 @@ import (
 )
 
 var (
-	listenAddr    = ":8080"
+	listenAddr    = os.Getenv("LISTEN_ADDR")
 	serverAAddr   = os.Getenv("SERVER_A_ADDR")
 	serverBAddr   = os.Getenv("SERVER_B_ADDR")
 	checkInterval = 5 * time.Second
