@@ -14,7 +14,7 @@ import (
 )
 
 var (
-	listenAddr    = fmt.Sprintf(":%", os.Getenv("LISTEN_ADDR"))
+	listenAddr    = fmt.Sprintf(":%s", os.Getenv("LISTEN_ADDR"))
 	serverAAddr   = os.Getenv("SERVER_A_ADDR")
 	serverBAddr   = os.Getenv("SERVER_B_ADDR")
 	checkInterval = 5 * time.Second
