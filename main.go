@@ -103,7 +103,7 @@ func isWebSocketRequest(req *http.Request) bool {
 
 func healthChecker(status *ServerStatus, serverA *url.URL) {
 	client := &http.Client{
-		Timeout: 2 * time.Second,
+		Timeout: 1 * time.Second,
 	}
 
 	for {
